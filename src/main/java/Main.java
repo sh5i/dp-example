@@ -21,7 +21,6 @@ public class Main {
         System.out.println("total size : " + rootDir.getSize());
         rootDir.accept(new ListVisitor());
 
-        // Observer始動
         file1.setSize(50);
 
         ((Entry)file1).setContent("this is file1");
