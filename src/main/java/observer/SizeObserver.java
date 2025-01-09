@@ -4,7 +4,7 @@ import node.Entry;
 
 public class SizeObserver implements Observer {
 	@Override
-	public void update(Entry entry) {
-		System.out.println("file: " + entry.getName() +  ", size : " + entry.getSize());
+	public void update(Subject subject) {
+		System.out.println("file: " + subject.getName() +  ", size : " + subject.getSize());
 	}
 }
